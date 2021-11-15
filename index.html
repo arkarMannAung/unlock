@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Plate Bearing Test</title>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script> -->
-	
-	<script src="vue.js"></script>
+	<title>Unlock Code Generator</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- <script src="vue.js"></script> -->
 	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
 	<style type="text/css">
 /* Chrome, Safari, Edge, Opera */
 		input::-webkit-outer-spin-button,
@@ -25,56 +25,57 @@
 </head>
 <body>
 	<div id="app">
-		<div class="container">
-			<div class="pt-5 pb-5"></div>
-			<h3 class="text-center">N5Kanji Code Generator</h3>
-			<div class="pt-3 pb-3"></div>
-
-			<form>
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-3 col-sm-12">
-							<label class="form-check-label" for="pass">Password :</label>		
-						</div>
-						<div class="col-md-9 col-sm-12">
-							<input class="form-control" type="password" v-model="password" name="pass" id="pass">
-						</div>
-					</div>					
-				</div>
+		<div class="container pl-5 pr-5">
+			<div class="container">
+				<div class="pt-5 pb-5"></div>
+				<h3 class="text-center">N5Kanji Code Generator</h3>
 				<div class="pt-3 pb-3"></div>
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-3 col-sm-12">
-							<label class="form-check-label" for="req">Request :</label>		
-						</div>
-						<div class="col-md-9 col-sm-12">
-							<input class="form-control" maxlength="8" type="text" v-model="request_code" name="req" id="req">
-						</div>
-					</div>					
-				</div>
-				<div class="pt-3 pb-3"></div>
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-3 col-sm-12">
-							<label class="form-check-label" for="unlock">Unlock :</label>		
-						</div>
-						<div class="col-md-9 col-sm-12">
-							<input class="form-control" disabled="" type="text" v-model="unlock_code" name="unlock" id="unlock">
-						</div>
-					</div>					
-				</div>
-				<div class="pt-3 pb-3"></div>			
-				<div class="row">
-					<div class="col-4"></div>
-					<div class="col-4">
-						<button onclick="event.preventDefault(void(0))" class="center btn-outline-success w-100" v-on:click="generate">Generate</button>
+	
+				<form>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-3 col-sm-12">
+								<label class="form-check-label" for="pass">Password :</label>		
+							</div>
+							<div class="col-md-9 col-sm-12">
+								<input class="form-control" type="password" v-model="password" name="pass" id="pass">
+							</div>
+						</div>					
 					</div>
-					<div class="col-4"></div>
-				</div>
-			</form>
-			
+					<div class="pt-3 pb-3"></div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-3 col-sm-12">
+								<label class="form-check-label" for="req">Request :</label>		
+							</div>
+							<div class="col-md-9 col-sm-12">
+								<input class="form-control" maxlength="8" type="text" v-model="request_code" name="req" id="req">
+							</div>
+						</div>					
+					</div>
+					<div class="pt-3 pb-3"></div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-3 col-sm-12">
+								<label class="form-check-label" for="unlock">Unlock :</label>		
+							</div>
+							<div class="col-md-9 col-sm-12">
+								<input class="form-control" disabled="" type="text" v-model="unlock_code" name="unlock" id="unlock">
+							</div>
+						</div>					
+					</div>
+					<div class="pt-3 pb-3"></div>			
+					<div class="row">
+						<div class="col-4"></div>
+						<div class="col-4">
+							<button onclick="event.preventDefault(void(0))" class="center btn-outline-success w-100" v-on:click="generate">Generate</button>
+						</div>
+						<div class="col-4"></div>
+					</div>
+				</form>
+				
+			</div>	
 		</div>
-		
 	</div>
 
 	<script type="text/javascript">
@@ -86,7 +87,7 @@
 
 				password: '',
 				request_code: 'asdfasdf',
-				unlock_code: 'hello',
+				unlock_code: '',
 			},
 			methods:{
 				generate: function (event){
@@ -98,7 +99,7 @@
 								index = i;
 							}
 						}
-						if(index){
+						if(index!=null){
 							this.unlock_code=this.y[index];
 						}else{
 							this.unlock_code='Not Found';
@@ -106,7 +107,8 @@
 					}else{
 						this.unlock_code='Password Worng';
 					}
-				}
+				},
+    
 			},
 			computed: {
 

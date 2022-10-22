@@ -1,0 +1,90 @@
+const state= {
+    dark: true,
+    token: false,
+    req_keys: ["J%&57g3m","%&5h5&EF","7&&%LU9x","&&9y738W","4&1X6%3E","%u8%&%7V","&%z9%S%&","Q49%1Pb%","ZMJor7%1","546&9&&S","%&&%vW&8","OA80&Y&%","6&&&N7W0","&&&&39av","%69gc3%9","%%%&&13K","39WI%N58","&70&9&%N","J%4%YM%8","%F7E%vMP","&%%b&9&Z","%T0%4MrU","%44&8%2&","Da&BH6Pv","%&X%&%%V","5Xh7%%6&","K%&&&&YQ","001%P&0G","8D8o&%%2","wy2U%%&&","j9OJ%&y&","L0&73v&6","58u&z%%&","X1&&&h8%","%%HJ%WD1","27&&hUUw","&&%&05&H","v%%0zq&%","ZR%&568&","%%B&iEE%","LQN6Y&6&","&MYWmbUe","R2&iY4&2","&X5&5MZ1","544sv%%0","%K&&N51%","&OA%79lS","%4%F%N7%","%%JA&983","%18%&9Qc","0K5&P&w&","QO%&&%&%","3u&%%43i","&%%&9yO5","%465U1%Y","F4%%&A8%","&P1&6jm9","J37S%%N2","9EZ&Ge&0","GU%&639%","6%%&&%V8","%&%58&AN","&56JF&NC","%2&&&W&&","&AhQ4%&%","M7%h2R%H","&6&7&U&&","k%%3HiE%","LH%N07&I","7%&31G8%","&%&&62%w","Q%O&%wrE","%%0&7vLl","6fAtQ%0N","5&2H7&4&","F&CmM4N6","4gLyY%&6","2y4895L%","&d%1PX48","D%%%KaW4","r%&N%ENQ","yL6i&6&8","Q0%%&R%u","M%%&264w","VO&&D&%%","&5%&Mf%%","6X&h&&3%","557%p00M","A&%7&v9&","%G&&4&%&","&&&BT4&1","88&&6sE&","P&C&D%%M","Zbh%VET4","6&%8N%0%","&dl%9d%I","Es%%Y&38","Z0&0s%&I","53Rw%&3W","Z9&q&T&N","XQ&N38%r","%%214A3O","%H3&&YCp","%9&L9Y&&","%4&v&&C%","&1t%J&7&","%5&%5&gi","%&&R&0c&","i&&&1Y4I","LV%%&K9U","%9U8%5u%","dE%&iW&Y","&1&%&D1O","F%t&LX%&","%R12%Q%u","z1&%pVw&","ME78OvIg","q&59L7UH","f%%bM%72","4KW%A%3%","JA&%xMT&","4EXRXze&","%8T&&321","DN&%&%N&","%E8&B%4&","Z&%&k9%K","50%5A6E7","1N&&r&cI","9%Q&ZK5t","19Vd63A6","&&W57%QR","4P%tB%O&","%%%5%%&%","%0Y%%63&","7QZW8079","&&f3&r&&","d&2SU&&8","B&7S%L&3","0IH&6&&&","&%%&%%&w","&J&&Z&5A","49RZxI78","7t%Z&&%X","2NL0V7E&","x38%4A8&","9a%6Y&Er","%mX%7&08","&&%X%&9P","%9f&N&&3","927&&&7U","r&01&4h&","&%%86e2&","4&27M%J3","1&3WF%rs","XY%kO%3&","%1I%&rO1","%R%%R&&7","&%eX%&22","&6%JQ8%I","Q%%5u%&7","&&cP8%%%","9YS&%%&w","j%Rf6&09","%%7w%&i&","edX&%v&l","GAS%&v2&","sK8CK&&3","qY%%oo%&","2&4A%NDx","%%L&&Td&","&7V%w6m%","%%&E&&55","%w&&n220","6&4%%%h8","QU&0&7&&","23&R%%%N","6R2ON%%&","zmL2&XRN","8I%&BAo4","9%%579vV","P%&%w5N%","%yRk9%&Z","p1Y61%0%","%m&%%&%A","&&r&3f&4","%0s1R&7&","%&%7Vq5%","XYKQLBM%","p5F%N%R%","%9SQJDQ3","%7sP&&s4","&%5K5&J%","N%Mh&8J6","mYG%C%&%","E%J&eB1Z","%%%%%V8%","s&1%%8%8","&J3v&T6&","9&&7k1h%","M&%&5&&R"],
+    unlock_keys: ["&&i&Yu0uq&%%","zX3%zXd%ve51","ayYmdf&Nlz7d","x%ihd4ip%%u%","ezzl7&5weTAb","iI&P0ccQ7%%r","%%8%&&r%k%a%","&zzKfNu%V&U%","1s&%m1q9%%d%","&%%1obIBbdr6","&&gnk%j%%dlj","%wmp9%817%&a","7RQ%8xu%q%cf","%g&uuWRz%k&i","Yr&0W%3zM19i","C&&h&tl5j3cx","Rh7ob&88K&k2","2bsT&r3a2LVx","6Rmf%&5r&4&k","&p0%%W&3%q&p","S6q%L%yX1022","lj&991%pjkfc","&mk%q%6%%21x","f66BXto&3sa0","b2rA%DvDg9%V","e0%&zf%%bs%v","s&vy6Simwv%%","b0ziaXK&NOa1","d6&619&sIgo%","2UydGm1&&0&0","jezbZ34&cjE9","&QDpA7kQ%noV","W&tngg3x&&ew","pY&&j5rhn7l%","E&h1&1w%%4n&","0Q7nhcm%mtv0","pj&a4zSFm%hW","G&ti4&xt2v%P","8&u5Ur3x&&cz","%n%osjay%&2d","xAU&f4IdH&vi","%zlX2v%Bn7z%","&1H&a%lioNv4","yed&fqmgPgw3","fhmvvqFnW%%7","fZ0&tuswtZ&k","dg%vi%n1K&Q&","kg%%4iXr1wav","&&%9ny&%q&%x","deyfa&ol0mf&","m&tzfVvz%j%2","1&n5cl8%RqR%","%&bx%%6y&l6H","&EPe%r&9AtCQ","rs%%l%&2ot&&","&&s%%u&Va%zf","Q&wqw62Sk%Ky","erpertbul5To","&5LXmYT&cd96","bo5n&t%%%&&U","&K&&iyif3e3u","p%Ga&&tWI&%%","Rbt%h&%KiyUb","uyF&%CHiGsfm","0wilz%&hk3oN","t0FX0%t95&6&","&vi7Q&%h&2r%","2IG1ilxZ%%q&","hn8ot9%8&m%&","%y&w95&ljc9&","7qkly&&q&6%&","5M%XN%5q&&k%","p4yo%U%pn%f&","7%&Xn1U4%l&i","Eu&Owr6jX%PF","jRnq&oxd%0xj","&6n&ieqS%w&%","U%pK&7%xd%y3","%1kNtA4%%L&s","W%o&52Njj&%0","6n&14fJxq%tn","hI&&w&EQTi&w","x&94%%&nI%K6","momQtoVvUp&&","oA9hD5lF9%w3","oep3&q%7&b4a","&ut%%43Rg1&C","M&bxj&&j6p&v","P7fK%spbB%S7","H&xjza8j632J","w&hej%yrv%ba","PRXc0oO%k96a","&rMq&x&7&JDn","CPe%S%u%%7&%","7%od&d6h20&s","50fonhb%5VTh","y&sxCqen%e%j","Z2TlC4a&fMnc","m70%b%ZBFp%&","m%jan5Vcvul2","v75y&%sNwf%&","eW%76t%&iCif","c5zgxls%&OlX","7&%&e&%&jEff","n%&%5&Q7&Dlb","BolI%&&m%%&u","dx&i&%M6jCe&","ie%7%o7L&&29","O%zd%t3XmsHz","&44m&%RJDO%r","%9&e4Zx3rd1u","4kt%%dv&&phO","%P3i&Y8&ebSi","v2bi3iv&x&T4","k9%wb9o&%&D%","%AZz&%mazmfe","%lz%&ou%gx&e","MK&a&raU6%43","Bmu%jixoLgrl","y&%8&A3&ls%C","wxx%l4ee&%Gm","Ab&cngXSxw8%","5ufg7YWfbz6f","mgd54lT%nz&%","4YpuwIN7i3H3","%ickc&Gjfk&%","v8%%8%s%m%e6","id&&%abl%%8b","Jy&%%9%%gLf&","%&8a3%tiE2&w","tR%9D&4q&aZu","f%Z%X3jgp&Z4","k1%gK8%%%3Y5","bk%%&%&Tv%7b","w%bo%ow%%WaW","u&JDq&t1%y%5","&As7lqoGky28","f5snmyalw&&A","%xCjy%%li%p%","5&R%&%%547g7","%alon%&PPBd&","89fdqLYDslh8","&ccW%&goq%x4","godygQ%J7&y&","s4q7S&w&MJG%","ot8quswv&%&&","Gpq%%6wR&7%&","A0QX%Jo%%rs%","%x%8%6&v%&Nr","%e30Ula&%4p&","9q&v188JxSRr","1&x&ys%qwuc&","r46b57O&4%4s","Jb6%8ljzpZmZ","7%%Q58I&alf0","%4R%w5g9mbw5","n1hxQ8fA6juo","%El3QTTr6%%%","9zQimp0q6%%3","f%&%d3UM%%n%","P5ngLsE%vL%7","sm&qMeAbxPms","&8e1u&Gp&164","%92&Vy&%5Ea%","lz%EH6&&2533","%Yp%4lD%mVAI","se71kT&clfz%","D&F%CP&36%rx","&%%%b&wz4%%y","4zGt&o2&ii&N","3&jZ2Fd%6BMS","9817r%s8eRv0","k&fetEEiYMq9","%xi%ze6tss%D","&&j%&AkYN2%4","t%uf&&hlifn8","%%5Xutvn4gNK","zIftf%%5iJvE","2oJ4E%y2&26&","U6yRL&d2&%e0","K1&b8&Ez9ZO&","8&ed%E%Ko&e%","rJIh%4%k&qye","Mdc4xezgd8%c","IMf&NmF1F2gb","&%44zs%5%rpX","%&o40Jq&%r%d","m2izQD%S%qa1","%f&8F2jF&ABo","jf%&jTebft%t","wdHbUkoK3V%B","H%WH9e%cS%67","&a1%&1WUn%C9","&%42W&O4&Stt","%889z1K82%%T","&z&67o%&7rks","x%MX8kz%5g9l","%o&m&pt1%%gA","j%%&Y&9u&uZo","9hn3A6V%&&72"],
+};
+const getters= {
+    getDark: state=> state.dark,
+    getToken: state=> state.token
+};
+const mutations= {
+    setDark: (state,dark)=>{
+        state.dark = dark;
+    },
+    setToken: (state,token)=>{
+        state.token = token;
+    }
+};
+const actions= {
+    init: ({commit})=>{
+        // dark
+        let html = document.getElementById('html');
+        if(localStorage.getItem('dark')){
+            const localDark = localStorage.getItem('dark');
+            if(localDark=='0' || localDark=='1'){
+                if(localDark=='0'){
+                    html.setAttribute('class','');
+                }else{
+                    html.setAttribute('class','dark');
+                }
+                commit('setDark',localDark=='1'?true:false);
+            }else{
+                localStorage.setItem('dark','1');
+            }
+        }else{
+            localStorage.setItem('dark','1');
+        }
+        // token
+        if(localStorage.getItem('token')){
+            if(localStorage.getItem('token')=='Mikasa089940'){
+                commit('setToken',true);
+            }else{
+                commit('setToken',false);
+            }
+        }
+    },
+    toggleDark: ({commit,state})=>{
+        if(state.dark){            
+            localStorage.setItem('dark','0');
+            html.setAttribute('class','');
+        }else{
+            localStorage.setItem('dark','1');
+            html.setAttribute('class','dark');
+        }
+        commit('setDark',!state.dark);
+    },
+    unlock: ({commit,state},{token,request})=>{
+        // console.log(state.unlock_keys.length);
+        let unlockCode = '';
+        state.req_keys.filter((ans,index)=>{
+            if(ans==request){
+                // console.log(state.unlock_keys[index]);
+                unlockCode=state.unlock_keys[index];
+            }
+        });
+        return new Promise( (resolve,reject)=>{
+            if(state.token){
+                if(unlockCode){
+                    resolve(unlockCode);
+                }else{
+                    reject('code not fond')
+                }
+            }else{
+                if('Mikasa089940'==token){
+                    localStorage.setItem('token','Mikasa089940');
+                    commit('setToken',true);
+                    if(unlockCode){
+                        resolve(unlockCode);
+                    }else{
+                        reject('code not fond')
+                    }
+                }else{
+                    reject('wrong token')
+                }
+            }
+        })
+    }
+};
+
+export default { state,getters,mutations,actions };

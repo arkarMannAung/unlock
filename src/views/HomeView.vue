@@ -1,20 +1,15 @@
 <script setup>
-
+  import DarkMode from '@/components/DarkIcon.vue';
+  import Logo from '@/components/Logo.vue';
+  import Unlock from '../components/Unlock.vue';  
+  // const auth=reactive('');
 </script>
 <template>
-   <div  class="relative flex flex-col h-screen overflow-auto scrollbar-hide">
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-    <div class="my-32">hello world</div>
-  </div>
+    <div class="container mx-auto">
+      <DarkMode/>
+      <Logo/>
+      <Unlock/>
+    </div>
+    <input type="hidden" id="copy_text"/>
 </template>
 
